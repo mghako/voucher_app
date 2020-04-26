@@ -124,8 +124,9 @@ export default {
       return {
         min: 101010989898,
         max: 101010020202,
-        price: '',
-        amount: '',
+        price: 435,
+        date: '07/04/2020 17:39',
+        amount: 15000,
         car_number: '',
         slip_number: '',
         gallon: '',
