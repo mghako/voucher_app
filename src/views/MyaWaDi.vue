@@ -126,7 +126,7 @@ export default {
         max: 101010020202,
         price: 435,
         date: '07/04/2020 17:39',
-        amount: 15000,
+        amount: 18000,
         car_number: '',
         slip_number: '',
         gallon: '',
@@ -151,7 +151,7 @@ export default {
       return (++result).toFixed(4)
     },
     getGallon: function() {
-      let result = this.getLitre / 3.785
+      let result = this.getLitre / 4.54
       
       return result.toFixed(4)
     }
