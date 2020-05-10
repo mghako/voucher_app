@@ -2,7 +2,6 @@
   <div id="app" class="px-10">
     <div id="nav" class="text-center">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
       <router-link to="/myawadi">မြဝတီ</router-link> |
       <router-link to="/denko-npt">Dendo(Npt-1)</router-link>
     </div>
