@@ -51,8 +51,8 @@
             </div>
           </div>
           <div id="printMe" class="col-span-1 subpixel-antialiased border pt-20 px-1">
-            <p class="text-center text-sm">မြဝတီစက်သုံးဆီအရောင်းဆိုင်(010)</p>
-            <p class="text-center text-sm mt-3 mb-2">နေပြည်တော် (မြို့မစျေး) </p>
+            <p class="text-center text-sm">ျမဝတီစက္သုံးဆီအေရာင္းဆိုင္(010)</p>
+            <p class="text-center text-sm mt-3 mb-2">ေနျပည္ေတာ္ (ၿမိဳ႕မေစ်း) </p>
             <p class="text-center text-sm font-medium mb-2">Octane (92-Ron)</p>
             <p class="text-xs">VehicleNo: <span v-html="car_number" class="font-medium"></span></p>
             <div class="grid grid-cols-4 gap-1 text-xs mt-2 ">
@@ -124,9 +124,9 @@ export default {
       return {
         min: 101010989898,
         max: 101010020202,
-        price: 435,
-        date: '07/04/2020 17:39',
-        amount: 18000,
+        price: 350,
+        date: '07/05/2020 07:35',
+        amount: 15000,
         car_number: '',
         slip_number: '',
         gallon: '',
