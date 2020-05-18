@@ -148,7 +148,7 @@ export default {
     getLitre: function() {
       let result = this.amount / this.price
       
-      return (++result).toFixed(4)
+      return (result).toFixed(4)
     },
     getGallon: function() {
       let result = this.getLitre / 4.54
