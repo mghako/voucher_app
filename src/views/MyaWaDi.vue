@@ -51,8 +51,8 @@
             </div>
           </div>
           <div id="printMe" class="col-span-1 subpixel-antialiased border pt-20 px-1">
-            <p class="text-center text-sm">မွဝတီစကျသုံးဆီအရောငျးဆိုငျ(010)</p>
-            <p class="text-center text-sm mt-3 mb-2">နပွေညျတောျ (မွို့မစြေး)</p>
+            <p class="text-center text-sm">မြဝတီစက်သုံးဆီအရောင်းဆိုင်(010)</p>
+            <p class="text-center text-sm mt-3 mb-2">နေပြည်တော်(မြို့မဈေး)</p>
             <p class="text-center text-sm font-medium mb-2">Octane (92-Ron)</p>
             <p class="text-xs">VehicleNo: <span v-html="car_number" class="font-medium"></span></p>
             <div class="grid grid-cols-4 gap-1 text-xs mt-2 ">
