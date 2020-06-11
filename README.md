@@ -1,24 +1,9 @@
-# print_app
-
+# Voucher Printing App With Vuejs
+## ဆီဆိုင် voucher print အတွက်ပါပဲ vuejs နဲ့ ရေးထားတာပါ... အခု repo မှာ ရေးထားတာကတော့ serverless ပါ
 ## Project setup
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
+npm install or npm i
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
