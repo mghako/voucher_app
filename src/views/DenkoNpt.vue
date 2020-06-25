@@ -14,12 +14,12 @@
             <div class="flex flex-col justify-between">
               <div class="w-full flex">
                 <div class="w-1/4"><label for="" class="w-1/2">Vehicle Number:</label></div>
-                <div class="w-3/4"><input v-model="car_number" type="text" class="ml-3 px-2 shadow-outline mb-3 mr-3" name="" id="" placeholder="1P/1234"><span class="text-gray-400">1P/1234</span></div>
+                <div class="w-3/4"><input v-model="car_number" type="text" class="ml-3 px-2 shadow-outline mb-3 mr-3" name="" id="" placeholder="1P/1234"><span class="text-gray-400">3Q/3436</span></div>
               </div>
               <div class="w-full flex">
                 <div class="w-1/4"><label for="" class="w-1/2">Date:</label></div>
                 <div class="w-3/4">
-                <input v-model="date" type="text" class="ml-3 px-2 shadow-outline mb-3 mr-3" name="" id="" placeholder="07/04/2020 17:39"><span class="text-gray-400">07/04/2020 17:39</span>
+                <input v-model="date" type="text" class="ml-3 px-2 shadow-outline mb-3 mr-3" name="" id="" placeholder="07/04/2020 17:39"><span class="text-gray-400">07/07/2020 17:39</span>
                 </div>
               </div>
               <div class="w-full flex">

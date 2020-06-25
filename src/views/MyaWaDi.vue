@@ -19,7 +19,7 @@
               <div class="w-full flex">
                 <div class="w-1/4"><label for="" class="w-1/2">Date:</label></div>
                 <div class="w-3/4">
-                <input v-model="date" type="text" class="ml-3 px-2 shadow-outline mb-3 mr-3" name="" id="" placeholder="07/04/2020 17:39"><span class="text-gray-400">07/04/2020 17:39</span>
+                <input v-model="date" type="text" class="ml-3 px-2 shadow-outline mb-3 mr-3" name="" id="" placeholder="07/04/2020 17:39"><span class="text-gray-400">07/07/2020 17:39</span>
                 </div>
               </div>
               <div class="w-full flex">
@@ -46,7 +46,8 @@
               </div>
               <div class="shadow p-5 w-1/4 text-center m-2">
                 <h5 class="font-bold">Slip Number</h5>
-                <p>{{ getSlipNumber }}</p>
+                <p>{{ slip_number }}</p>
+                <a  href="#" @click.prevent="reloadVoucherCode" class="bg-green-400 text-white rounded py-1 px-4">Reload</a>
               </div>
             </div>
           </div>
@@ -60,7 +61,7 @@
                 <span class="font-medium" >Date:</span> <span v-html="date"></span>
               </div>
               <div class="col-span-2 mb-2 border-b-2 border-dotted border-gray-600">
-                <span class="font-medium">Slip:</span> <span v-html="'MWD'+getSlipNumber"></span>
+                <span class="font-medium">Slip:</span> <span v-html="'MWD'+slip_number"></span>
               </div>
               <div class="col-span-1 border-b-2 border-dotted border-gray-600 pb-2 font-medium">Gallon</div>
               <div class="col-span-1 border-b-2 border-dotted border-gray-600 pb-2 font-medium">Liter</div>
@@ -114,7 +115,7 @@
             
           </div>
       </div>
-    <button v-print="'#printMe'" class="bg-green-500 text-white p-2 hover:bg-green-400 focus:outline-none focus:shadow-outline rounded">Print Voucher</button>
+    <button v-print="'#printMe'" @click.prevent="reloadVoucherCode()" class="bg-green-500 text-white p-2 hover:bg-green-400 focus:outline-none focus:shadow-outline rounded">Print Voucher</button>
   </div>
 </template>
 
@@ -124,10 +125,10 @@ export default {
       return {
         min: 101010989898,
         max: 101010020202,
-        price: 350,
-        date: '07/05/2020 07:35',
-        amount: 15000,
-        car_number: '',
+        price: 545,
+        date: '07/07/2020 07:35',
+        amount: 24000,
+        car_number: '2Q/1890',
         slip_number: '',
         gallon: '',
           printObj: {
@@ -138,12 +139,12 @@ export default {
           }
       };
   },
-  crerated() {
-    this.getSlipNumber
+  created() {
+    this.reloadVoucherCode()
   },
   computed: {
     getSlipNumber: function() {
-      return  Math.floor(Math.random() * this.max ) + this.min;
+      return Math.floor(Math.random() * this.max ) + this.min;
     },
     getLitre: function() {
       let result = this.amount / this.price
@@ -156,15 +157,17 @@ export default {
       return result.toFixed(4)
     }
   },
-  watch: {
-    getLitre: function() {
+  methods: {
+    reloadVoucherCode() {
       
+      this.slip_number = Math.floor(Math.random() * this.max ) + this.min;
     }
+  },
+  watch: {
+    // getLitre: function() {
+      
+    // }
   },
   
 }
 </script>
-
-<style>
-
-</style>
